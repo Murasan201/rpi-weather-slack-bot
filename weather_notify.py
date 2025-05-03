@@ -45,8 +45,10 @@ def post_to_slack(webhook_url: str, message: str):
 def main():
     # 環境変数から情報を取得
     api_key = os.getenv("OPENWEATHER_API_KEY")
+    print(f"DEBUG: OPENWEATHER_API_KEY='{api_key}'")
     city = os.getenv("CITY_NAME", "Tokyo,JP")
     webhook = os.getenv("SLACK_WEBHOOK_URL")
+    print(f"DEBUG: SLACK_WEBHOOK_URL='{webhook}'")
 
     if not (api_key and webhook):
         print("Error: OPENWEATHER_API_KEY と SLACK_WEBHOOK_URL を環境変数で設定してください。", file=sys.stderr)

@@ -11,7 +11,8 @@ A Python script for Raspberry Pi that fetches current weather from OpenWeatherMa
 ## Prerequisites
 
 - Python 3.6 or higher
-- `requests` library
+- `requests` library  
+- OpenWeatherMap API key with "Current weather and forecasts" plan enabled
 
 ## Installation
 
